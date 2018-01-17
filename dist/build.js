@@ -65,9 +65,22 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-alert("da");
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__persistance_js__ = __webpack_require__(1);
+
+alert(344+__WEBPACK_IMPORTED_MODULE_0__persistance_js__["a" /* default */]);
+
+
+/***/ }),
+/* 1 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var const_t=32;
+/* harmony default export */ __webpack_exports__["a"] = (const_t);
 
 /***/ })
 /******/ ]);
