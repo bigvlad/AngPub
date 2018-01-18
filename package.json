@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node_modules/.bin/webpack",
-    "buildVendor": "node_modules/.bin/webpack --config webpack.config.vendor.js"
+    "build": "node_modules/.bin/webpack"
   },
   "keywords": [],
   "author": "",

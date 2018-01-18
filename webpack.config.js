@@ -8,11 +8,11 @@ module.exports={
         path:path.join(__dirname,'./dist'),
         filename:'build.js'
     },
-    watch: true,
-    plugins: [
-        new webpack.DllReferencePlugin({
-            context: __dirname,
-            manifest: require('./dist/vendor-manifest.json')
-        })
-    ]
+    // module: {
+    //     loaders: [
+    //     //   { test: /\.css$/, loader: 'style-loader!css-loader' },
+    //       { test: /\.css$/, loader: ['style-loader','css-loader'] },
+    //     ]
+    // },
+    //watch: true
 }
