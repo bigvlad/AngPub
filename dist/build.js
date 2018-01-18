@@ -65,13 +65,55 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-throw new Error("Cannot find module \"./persistance\"");
-
-Object(__WEBPACK_IMPORTED_MODULE_0__persistance__["logger"])("fer");
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+//casting
+var t = true; //nerecomandat, folositi boolean
+window.isReady = true;
+//null checking and"I am sure operator"/if
+var s = null;
+var ter = s + 4;
+//interfata on the go
+function printLabel(labelledObj) {
+    console.log(labelledObj.label);
+}
+var myObj = { size: 10, label: "Size 10 Object" };
+printLabel(myObj);
+var Animal = /** @class */ (function () {
+    function Animal(nume) {
+        this.name = nume;
+    }
+    Animal.prototype.move = function (distanceInMeters) {
+        if (distanceInMeters === void 0) { distanceInMeters = 0; }
+        console.log(this.name + " moved " + distanceInMeters + "m.");
+    };
+    return Animal;
+}());
+// let greeter = new Animal("Dani");
+var Dog = /** @class */ (function (_super) {
+    __extends(Dog, _super);
+    function Dog() {
+        return _super.call(this, "Crivei") || this;
+    }
+    Dog.prototype.bark = function () {
+        console.log('Woof! Woof!');
+    };
+    return Dog;
+}(Animal));
+var dog = new Dog();
+dog.bark();
+dog.move(10);
+dog.bark();
 
 
 /***/ })
