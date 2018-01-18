@@ -5,14 +5,23 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build":"node_modules/.bin/webpack src/main.js dist/build.js",
-    "build_simple":"node_modules/.bin/webpack"
+    "build": "node_modules/.bin/webpack",
+    "buildVendor": "node_modules/.bin/webpack --config webpack.config.vendor.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "css-loader": "^0.28.9",
+    "file-loader": "^1.1.6",
+    "style-loader": "^0.19.1",
+    "url-loader": "^0.6.2",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.11.0"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "pnotify": "^3.2.1"
   }
 }

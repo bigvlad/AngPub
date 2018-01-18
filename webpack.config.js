@@ -8,5 +8,11 @@ module.exports={
         path:path.join(__dirname,'./dist'),
         filename:'build.js'
     },
-    watch: true
+    watch: true,
+    plugins: [
+        new webpack.DllReferencePlugin({
+            context: __dirname,
+            manifest: require('./dist/vendor-manifest.json')
+        })
+    ]
 }

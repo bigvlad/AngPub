@@ -69,47 +69,23 @@
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__persistance_js__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
 
-Object(__WEBPACK_IMPORTED_MODULE_0__persistance_js__["b" /* logger */])('testing');
-Object(__WEBPACK_IMPORTED_MODULE_0__persistance_js__["c" /* sum */])(1144,__WEBPACK_IMPORTED_MODULE_0__persistance_js__["a" /* const_t */]);
+console.log(__WEBPACK_IMPORTED_MODULE_0_jquery___default()("#myModal"));
 
 
 /***/ }),
 /* 1 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return const_t; });
-/* harmony export (immutable) */ __webpack_exports__["b"] = logger;
-/* harmony export (immutable) */ __webpack_exports__["c"] = sum;
-var const_t=32;
+module.exports = (__webpack_require__(2))(0);
 
-function logger(msg){
-    console.log(msg);
-}
+/***/ }),
+/* 2 */
+/***/ (function(module, exports) {
 
-function sum(a,b){
-    logger(a+b);
-}
-
-// OR
-
-// var const_t=32;
-
-// function logger(msg){
-//     console.log(msg);
-// }
-
-// function sum(a,b){
-//     logger(a+b);
-// }
-
-// export default {
-//     param:const_t,
-//     print:logger,
-//     add:sum
-// }
+module.exports = vendor_fd146a16b788f69706de;
 
 /***/ })
 /******/ ]);
